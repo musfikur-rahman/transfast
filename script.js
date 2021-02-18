@@ -8,7 +8,8 @@ document.onreadystatechange = function () {
 }
 
 async function CountriesByFetch() {
-    let response = await fetch('https://demo-api.transfast.net/api/catalogs/countries', {        
+    let response = await fetch('https://demo-api.transfast.net/api/catalogs/countries', {
+        origin: 'https://musfikur-rahman.github.io/',
         method: 'GET',
         headers: {
             'Content-Type': 'application/json;charset=utf-8',
