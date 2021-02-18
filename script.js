@@ -9,7 +9,7 @@ document.onreadystatechange = function () {
 
 async function CountriesByFetch() {
     let response = await fetch('https://demo-api.transfast.net/api/catalogs/countries', {
-        origin: 'https://musfikur-rahman.github.io',
+        credentials: "include",
         method: 'GET',
         headers: {
             'Content-Type': 'application/json;charset=utf-8',
